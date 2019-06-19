@@ -43,6 +43,8 @@ function runDetection() {
     //model.renderPredictions(predictions, canvas, context, video);
     if (predictions.length > 0) {
       audio.play();
+    } else {
+      audio.stop();
     }
   });
 }
